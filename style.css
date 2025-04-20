@@ -125,5 +125,94 @@ button {
 button:hover {
   background-color: #555;
 }
+/* ========== MEDIA QUERIES ========== */
 
+/* Telas pequenas: até 699px (ex: iPhone 5, Galaxy S5) */
+@media (max-width: 699px) {
+  body {
+    padding: 10px;
+    justify-content: flex-start;
+  }
 
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  main {
+    padding: 10px;
+    height: auto;
+  }
+
+  section {
+    padding: 15px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .otter-contacts {
+    
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+/* Telas médias: de 700px até 1024px (ex: tablets, celulares maiores) */
+@media (min-width: 700px) and (max-width: 1024px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  nav a {
+    font-size: 17px;
+  }
+
+  main {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  section {
+    max-width: 90%;
+  }
+
+  .otter-contacts {
+    justify-content: space-between;
+    
+  }
+}
